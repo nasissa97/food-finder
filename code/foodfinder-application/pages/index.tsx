@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 
-import LocationsList from 'components/location-list';
+import LocationsList from '@/components/locations-list';
 import dbConnect from 'middleware/db-connect';
 import { findAllLocations } from "mongoose/locations/services";
 import { LocationType } from "mongoose/locations/schema";

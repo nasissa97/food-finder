@@ -9,10 +9,12 @@ import { QueryOptions } from "mongoose";
 async function findLocations(
     filter: FilterLocationType | FilterWishlistType | {}
 ): Promise<LocationType[] | []> {
+    console.log(`Filter: ${filter}`);
     try {
         let result: Array<LocationType | undefined> = await Locations.find(
             filter
         );
+        console.log(result);
         return result as LocationType[];
     } catch (err) {
         console.log(err);
