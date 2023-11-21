@@ -1,0 +1,1 @@
+MY_USER=$(id -u):$(id -g) docker compose up
